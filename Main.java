@@ -8,6 +8,7 @@ public class Main {
     Lancer lancer = new Lancer();
     Monk monk = new Monk();
     Sniper sniper = new Sniper();
+    Magician magician = new Magician();
 
     System.out.println(peasant);
     System.out.println(bandit);
@@ -15,5 +16,6 @@ public class Main {
     System.out.println(lancer);
     System.out.println(monk);
     System.out.println(sniper);
+    System.out.println(magician);
   }
 }
