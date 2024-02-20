@@ -1,7 +1,16 @@
+import java.util.ArrayList;
+
 import characters.*;
+import characters.util.Magic;
 
 public class Main {
   public static void main(String[] args) {
+    ArrayList<Character> team1 = new ArrayList<>();
+    ArrayList<Character> team2 = new ArrayList<>();
+    for (int i = 0; i < 20; i++) {
+      team1.add(new Character() {
+      });
+    }
     Peasant peasant = new Peasant();
     Bandit bandit = new Bandit();
     Crossbowman crossbowman = new Crossbowman();
@@ -17,5 +26,9 @@ public class Main {
     System.out.println(monk);
     System.out.println(sniper);
     System.out.println(magician);
+
+    for (Magic value : Magic.values()) {
+      System.out.println(value);
+    }
   }
 }

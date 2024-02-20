@@ -1,5 +1,7 @@
 package characters;
 
+import characters.util.Character;
+
 public class Monk extends Character {
   public Monk() {
     this.name = "Монах";

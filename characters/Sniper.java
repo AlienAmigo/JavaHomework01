@@ -1,5 +1,7 @@
 package characters;
 
+import characters.util.Character;
+
 public class Sniper extends Character {
   public Sniper() {
     this.name = "Снайпер";

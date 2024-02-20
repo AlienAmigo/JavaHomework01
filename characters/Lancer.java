@@ -1,5 +1,7 @@
 package characters;
 
+import characters.util.Character;
+
 public class Lancer extends Character {
   public Lancer() {
     this.name = "Копейщик";

@@ -1,8 +1,8 @@
-package characters;
+import characters.util.Character;
 
 public class Bandit extends Character {
-  public Bandit() {
-    this.name = "Бандит";
+  public Bandit(String name, int x, int y) {
+    super(100, 60, 40, 30, 25, 60, 1, name, x, y);
   }
 
   @Override

@@ -1,5 +1,7 @@
 package characters;
 
+import characters.util.Character;
+
 public class Crossbowman extends Character {
   public Crossbowman() {
     this.name = "Арбалетчик";
