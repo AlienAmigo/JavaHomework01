@@ -1,10 +1,10 @@
 package characters;
 
-import characters.util.Character;
+import characters.base.Character;
 
 public class Lancer extends Character {
-  public Lancer() {
-    this.name = "Копейщик";
+  public Lancer(String name, int x, int y) {
+    super(100, 70, 70, 30, 35, 60, 0, 1, name, x, y);
   }
 
   @Override

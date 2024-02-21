@@ -1,4 +1,4 @@
-package characters.util;
+package characters.base;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package characters.util;
+package characters.base;
 
 public interface ICharacter {
   public abstract void attack();

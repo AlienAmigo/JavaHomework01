@@ -1,4 +1,4 @@
-package characters.util;
+package characters.base;
 
 public enum Magic {
   fireball(10, 12), heal(2, -2), magDef(5, 2);

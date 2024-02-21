@@ -1,10 +1,10 @@
 package characters;
 
-import characters.util.Character;
+import characters.base.Character;
 
 public class Magician extends Character {
-  public Magician() {
-    this.name = "Колдун";
+  public Magician(String name, int x, int y) {
+    super(100, 30, 60, 90, 10, 60, 100, 1, name, x, y);
   }
 
   @Override

@@ -1,4 +1,4 @@
-package characters.util;
+package characters.base;
 
 public class Place {
   int x, y;

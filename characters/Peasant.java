@@ -1,10 +1,10 @@
 package characters;
 
-import characters.util.Character;
+import characters.base.Character;
 
 public class Peasant extends Character {
-  public Peasant() {
-    this.name = "Крестьянин";
+  public Peasant(String name, int x, int y) {
+    super(100, 50, 50, 30, 10, 60, 0, 1, name, x, y);
   }
 
   @Override
