@@ -1,9 +1,7 @@
 package characters.base;
 
-import characters.config.Config;
+import config.Config;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 
 public class Place {

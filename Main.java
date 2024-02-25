@@ -3,10 +3,8 @@ import java.util.*;
 import characters.*;
 import characters.base.*;
 import characters.base.Place;
-import characters.config.Config;
 import characters.base.Character;
-import characters.base.Magic;
-import characters.config.ConsoleColors;
+import config.ConsoleColors;
 
 public class Main {
     public static Character createCharacter(int index, String name, int x, int y) {

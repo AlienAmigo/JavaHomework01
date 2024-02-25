@@ -1,6 +1,6 @@
 package characters.base;
 
-import characters.config.ConsoleColors;
+import config.ConsoleColors;
 
 import java.util.ArrayList;
 
