@@ -2,9 +2,8 @@
 *.class
 
 # IDE settings
-.vscode/
-.idea/
-.iml
+.vscode
+.idea
 
 **/tempCodeRunnerFile.java
 

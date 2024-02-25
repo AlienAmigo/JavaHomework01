@@ -1,7 +1,7 @@
 package characters.base;
 
 public abstract class Character implements ICharacter {
-    protected String name;
+    public String name;
     protected int health;
     protected int strength;
     protected int agility;
@@ -24,6 +24,7 @@ public abstract class Character implements ICharacter {
         this.damage = damage;
         this.mana = mana;
         this.level = level;
+
         this.position = new Place(x, y);
     }
 }

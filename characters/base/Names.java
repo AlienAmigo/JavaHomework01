@@ -51,7 +51,7 @@ public enum Names {
   Endeavour,
   Fox;
 
-  public String getName() {
+  public static String getName() {
     return String.valueOf(Names.values()[new Random().nextInt(Names.values().length - 1)]);
   }
 }

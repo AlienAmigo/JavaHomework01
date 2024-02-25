@@ -1,3 +1,5 @@
+package characters;
+
 import characters.base.Character;
 
 public class Bandit extends Character {
