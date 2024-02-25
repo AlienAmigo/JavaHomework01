@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public abstract class Character implements ICharacter {
     public String name;
+    public Place position;
     protected int health;
     protected int strength;
     protected int agility;
@@ -14,8 +15,6 @@ public abstract class Character implements ICharacter {
     protected int damage;
     protected int mana;
     protected int level;
-
-    Place position;
 
     public Character(Integer health, Integer strength, Integer agility, Integer intelligence, Integer armor,
                      Integer damage, Integer mana, Integer level, String name, int x, int y) {
@@ -32,18 +31,6 @@ public abstract class Character implements ICharacter {
         this.position = new Place(x, y);
     }
 
-    public Character findClosestEnemy(ArrayList<Character> enemies) {
-        double distanceEnemy = Double.MAX_VALUE;
-        Character closestEnemy = enemies.get(0);
-        for (Character enemy : enemies) {
-            double currentDistance = Math.sqrt(Math.pow(this.position.x - enemy.position.x, 2) + Math.pow(this.position.y - enemy.position.y, 2));
-            if (distanceEnemy < currentDistance) {
-                distanceEnemy = currentDistance;
-                closestEnemy = enemy;
-            }
-        }
-        return closestEnemy;
-    }
 
     @Override
     public String toString() {

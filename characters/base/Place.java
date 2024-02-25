@@ -1,7 +1,5 @@
 package characters.base;
 
-import config.Config;
-
 import java.util.Random;
 
 public class Place {
@@ -12,9 +10,13 @@ public class Place {
         this.y = y;
     }
 
-    public static Place getRand() {
+    public static int getRand(int minValue, int maxValue) {
         Random random = new Random();
-        return new Place(random.nextInt(Config.MAX_X + 1), random.nextInt(Config.MAX_Y + 1));
+        return minValue + random.nextInt(maxValue - minValue + 1);
+    }
+
+    public static Double calcDistance(int x1, int y1, int x2, int y2) {
+        return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
     }
 
     public int getX() {

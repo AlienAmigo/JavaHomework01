@@ -4,6 +4,7 @@ import characters.*;
 import characters.base.*;
 import characters.base.Place;
 import characters.base.Character;
+import config.Config;
 import config.ConsoleColors;
 
 public class Main {
@@ -31,12 +32,8 @@ public class Main {
         ArrayList<Character> team2 = new ArrayList<>();
         Random rand = new Random();
         for (int i = 0; i < 20; i++) {
-            team1.add(
-                    createCharacter(rand.nextInt(7 + 1), Names.getName(), Place.getRand().getX(),
-                            Place.getRand().getY()));
-            team2.add(
-                    createCharacter(rand.nextInt(7 + 1), Names.getName(), Place.getRand().getX(),
-                            Place.getRand().getY()));
+            team1.add(createCharacter(rand.nextInt(7), Names.getName(), Place.getRand(Config.MIN_X, Config.MAX_X), Place.getRand(Config.MIN_Y, Config.MAX_Y / 2)));
+            team2.add(createCharacter(rand.nextInt(7 + 1), Names.getName(), Place.getRand(Config.MIN_X, Config.MAX_X), Place.getRand(Config.MAX_Y / 2 + 1, Config.MAX_Y)));
         }
 
         for (int i = 0; i < team1.size(); i++) {
@@ -44,11 +41,9 @@ public class Main {
                 System.out.println(ConsoleColors.GREEN_BOLD + "Team 1:" + ConsoleColors.RESET);
             }
             System.out.println(ConsoleColors.WHITE_BOLD + i + ConsoleColors.RESET + "\n" + team1.get(i).getShortInfo());
-            System.out.println("closestEnemy: \n" + team1.get(i).findClosestEnemy(team2).getShortInfo());
+            if (team1.get(i) instanceof Crossbowman crossbowman) {
+                System.out.println("closestEnemy: \n" + crossbowman.findClosestEnemy(team2).getShortInfo());
+            }
         }
-
-        // for (Magic value : Magic.values()) {
-        // System.out.println(value);
-        // }
     }
 }

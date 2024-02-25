@@ -6,6 +6,8 @@
 .idea/
 .iml
 
+out/
+
 **/tempCodeRunnerFile.java
 
 # Log file
